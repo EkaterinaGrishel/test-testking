@@ -1,0 +1,50 @@
+.page-header {
+  margin-bottom: 46px;
+
+  &__inner {
+    background-color: $bg-color-header;
+    border: 1px solid rgba(153, 160, 182, 0.5);
+    box-sizing: border-box;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+
+  &__logo {
+    margin-right: 69px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .page-header {
+    position: relative;
+    margin-bottom: 30px;
+
+    &__inner {
+      border: none;
+      min-height: 54px;
+    }
+
+    &__inner-wrapper {
+      padding: 4px 0;
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      min-height: 17px;
+      min-width: 108px;
+      order: 1;
+      margin-right: 0;
+      padding: 0 5px;
+
+    }
+  }
+}

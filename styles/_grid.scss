@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: 75% 24%;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: $mobile-width) {
+  .grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  }
+}

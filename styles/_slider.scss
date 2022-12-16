@@ -1,0 +1,32 @@
+.slider {
+  display: none;
+}
+
+@media screen and (max-width: $mobile-width) {
+  .slider {
+    display: flex;
+    margin: 0 auto;
+    
+  
+    &__wrapper {
+      display: flex;
+      gap: 10px;
+    }
+  
+    &__toggle {
+      padding: 0;
+      height: 8px;
+      width: 8px;
+      border: 1px solid $special-grey-2;
+      border-radius: 50%;
+      background-color: $special-grey-2;
+  
+      &--current {
+        background-color: $orange-color;
+        border: 1px solid $orange-color;
+      }
+    }
+  }
+}
+  
+

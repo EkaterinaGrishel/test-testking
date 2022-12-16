@@ -1,0 +1,55 @@
+.action {
+  background-color: $action-color;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    color: $action-text-color;
+    padding: 15px 0 14px 0;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  &__close {
+    position: relative;
+    border: none;
+    background: transparent;
+
+    &::before {
+      content: " ";
+      background: url("../icons/close.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 14px;
+      width: 14px;
+      position: absolute;
+      font-size: 26px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .action {
+    margin: 0;
+    &__text {
+      font-size: 15px;
+      line-height: 24px;
+      padding: 14px 23px 13px 20px;
+    }
+
+    &__close {
+      &::before {
+        top: 25px;
+      }
+    }
+  }
+}

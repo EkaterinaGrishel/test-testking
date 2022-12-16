@@ -1,0 +1,70 @@
+.help {
+  background: 
+    linear-gradient(92.24deg, rgba(255, 216, 22, 0.1) -50.31%, rgba(255, 175, 9, 0.1) 48.89%);
+  border-radius: 10px;
+  padding: 41px 0 23px;
+  text-align: center;
+  position: relative;
+  outline: 1px solid $orange-color;
+
+
+  &::before {
+    content: "?";
+    position: absolute;
+    border: 1px solid $orange-color;
+    border-radius: 50%;
+    background: $orange-color;
+    height: 58px;
+    width: 58px;
+    font-size: 24px;
+    line-height: 58px;
+    color: $action-text-color;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.0044em;
+    color: $dark-color-inner;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0044em;
+    color: $bg-color-inner2;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .help {
+    padding: 40px 0px 27px;
+    margin-bottom: 40px;
+
+    &::before {
+      height: 38px;
+      width: 38px;
+      font-size: 20px;
+      line-height: 38px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 15px;
+    }
+  }
+}

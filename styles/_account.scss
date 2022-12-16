@@ -1,0 +1,122 @@
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    margin-right: 5px;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      color: $basic-color;
+      height: 100%;
+    }
+
+    &--user {
+      margin-right: 0;
+      svg {
+        position: absolute;
+        left: 15px;
+        top: -3px
+      }
+
+      a {
+        border: 1px solid rgba(153, 160, 182, 0.5);
+        border-radius: 5px;
+        padding: 15px 11px 14.5px 60px;
+        box-sizing: border-box;
+      }  
+    }
+
+    &--cart {
+      svg {
+        margin-top: 10px;
+      }
+    }
+
+    &:not(:last-child)::after {
+      content: " ";
+      display: inline-block;
+      width: 1px;
+      height: 17px;
+      background: $light-grey;
+      margin: 0 35px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .account {
+    order: 3;
+
+    &__item--cart {
+      position: relative;
+      &::before {
+        content: "44";
+        position: absolute;
+        font-family: $default-font;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        color: $action-text-color;
+        font-size: 10px;
+        border: 1px solid $action-color;
+        background-color: $action-color;
+        border-radius: 50%;
+        text-align: center;
+        left: 15px;
+        top: 0px;
+        z-index: 1;
+      }
+    }
+
+    &__item {
+      a {
+        font-size: 0;
+      }
+
+      &:not(:last-child)::after {
+        display: none;
+      }
+
+      &--works {
+        display: none;
+      }
+
+      &--user {
+        margin-right: 0;
+        svg {
+          width: 24px;
+          height: 24px;
+          margin: 0;
+          top: 0px;
+        }
+
+        a {
+          padding-left: 50px;
+          border: none;
+        }    
+      }
+
+      &--cart {
+        svg {
+          width: 25px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

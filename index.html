@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>ExamTest</title>
+</head>
+
+<body class="page-body">
+  <aside class="action">
+    <div class="action__container container">
+      <p class="action__text">
+        Limited Time Discount Offer 30% Off - Ends in 00:43:24
+      </p>
+      <button class="action__close"></button>
+    </div>
+  </aside>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="container">
+        <div class="page-header__inner-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1580px)" srcset="img/el-logo-desktop.svg">
+              <img src="img/el-logo-mobile.svg" alt="ExamTest">
+            </picture>
+          </a>
+          <div class="site-search">
+            <input class="site-search__input input-search" id="site-search-input" type="search" placeholder="Search">
+            <button class="site-search__button" type="button" aria-label="Toggle search">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10ZM18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10Z"
+                  fill="#2B2C30" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.0001 17.4141C15.6096 17.0236 15.6096 16.3904 16.0001 15.9999C16.3906 15.6094 17.0238 15.6094 17.4143 15.9999L21.6569 20.2426C22.0475 20.6331 22.0475 21.2663 21.6569 21.6568C21.2664 22.0473 20.6332 22.0473 20.2427 21.6568L16.0001 17.4141Z"
+                  fill="#2B2C30" />
+              </svg>
+            </button>
+          </div>
+          <ul class="account">
+            <li class="account__item account__item--works">
+              <a class="account__link" href="#">
+                <span class="account__icon-works">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.57716 9.74976H5.13961C5.0314 9.74976 4.93656 9.79063 4.85531 9.87174C4.77399 9.95306 4.7334 10.0478 4.7334 10.1561V12.5938C4.7334 12.7021 4.77413 12.797 4.85531 12.8781C4.93656 12.9592 5.03129 13 5.13961 13H7.57716C7.68537 13 7.78046 12.9593 7.86139 12.8781C7.94285 12.797 7.98351 12.7021 7.98351 12.5938V10.1561C7.98351 10.0478 7.94296 9.95306 7.86139 9.87174C7.78046 9.79042 7.68537 9.74976 7.57716 9.74976Z"
+                      fill="#2B2C30" />
+                    <path
+                      d="M10.7768 2.45282C10.4991 1.94134 10.1403 1.50991 9.70011 1.15773C9.26018 0.805701 8.76556 0.524565 8.21724 0.314753C7.6688 0.105013 7.12378 0 6.582 0C4.52376 0 2.95295 0.90054 1.86952 2.70165C1.81542 2.78963 1.79674 2.88439 1.81364 2.98599C1.83064 3.08745 1.88311 3.17211 1.97112 3.23981L3.63681 4.50946C3.72482 4.56353 3.80948 4.5906 3.89077 4.5906C4.01268 4.5906 4.11755 4.53635 4.20566 4.42803C4.69309 3.81873 5.0554 3.42941 5.29236 3.26005C5.58356 3.06376 5.94908 2.96564 6.38919 2.96564C6.8022 2.96564 7.16604 3.074 7.48101 3.2905C7.79583 3.50721 7.9531 3.75776 7.9531 4.04213C7.9531 4.36023 7.86862 4.61764 7.69929 4.814C7.53007 5.01029 7.24559 5.19979 6.84603 5.38268C6.31805 5.61963 5.83371 5.987 5.39381 6.48467C4.95359 6.98237 4.73364 7.5122 4.73364 8.07416V8.53117C4.73364 8.65994 4.769 8.78683 4.84022 8.91209C4.91137 9.03745 4.99763 9.10002 5.09927 9.10002H7.53679C7.64515 9.10002 7.73984 9.04766 7.82116 8.94236C7.90223 8.8377 7.94304 8.72764 7.94304 8.6127C7.94304 8.44348 8.03613 8.21641 8.22218 7.93218C8.40841 7.64781 8.64024 7.42754 8.91807 7.27176C9.18199 7.12285 9.38831 7.00283 9.53744 6.9113C9.6867 6.82002 9.88122 6.67242 10.1217 6.46944C10.362 6.26625 10.5482 6.0648 10.6801 5.86512C10.8122 5.66541 10.9307 5.40637 11.0357 5.08806C11.1408 4.76985 11.1932 4.42789 11.1932 4.0623C11.1931 3.50031 11.0542 2.96376 10.7768 2.45282Z"
+                      fill="#2B2C30" />
+                  </svg>
+                </span>
+                How it works
+              </a>
+            </li>
+            <li class="account__item account__item--user">
+              <a class="account__link" href="#">
+                <span class="account__icon-user">
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="16" fill="#7A8EA5" />
+                    <g clip-path="url(#clip0_0_1)" filter="url(#filter0_d_0_1)">
+                      <path
+                        d="M16.0002 16.0001C17.2427 16.0001 18.3032 15.5605 19.182 14.6817C20.0609 13.8028 20.5004 12.7423 20.5004 11.4999C20.5004 10.2578 20.0609 9.19725 19.182 8.3182C18.3029 7.4394 17.2423 7 16.0002 7C14.758 7 13.6973 7.4394 12.8184 8.3182C11.9395 9.19725 11.5 10.2578 11.5 11.4999C11.5 12.7423 11.9395 13.8028 12.8184 14.6817C13.6975 15.5605 14.7579 16.0001 16.0002 16.0001Z"
+                        fill="white" />
+                      <path
+                        d="M24.2092 20.752C24.1817 20.3576 24.127 19.9317 24.0451 19.4746C23.963 19.0175 23.8594 18.5939 23.7344 18.2031C23.6094 17.8126 23.4414 17.4317 23.2304 17.0605C23.0196 16.6894 22.7774 16.3731 22.5038 16.1112C22.2302 15.8495 21.8962 15.6406 21.502 15.4844C21.1073 15.3282 20.6717 15.25 20.1951 15.25C20.1248 15.25 19.9607 15.334 19.7029 15.502C19.4453 15.67 19.1542 15.8575 18.83 16.0646C18.5058 16.2714 18.0837 16.4591 17.5644 16.6268C17.0448 16.7948 16.5234 16.8788 15.9998 16.8788C15.4764 16.8788 14.9549 16.7948 14.4354 16.6268C13.916 16.4591 13.494 16.2714 13.1698 16.0646C12.8456 15.8575 12.5546 15.67 12.2968 15.502C12.0389 15.334 11.875 15.25 11.8046 15.25C11.3281 15.25 10.8925 15.3282 10.498 15.4844C10.1034 15.6406 9.76948 15.8496 9.49599 16.1112C9.22258 16.3731 8.98036 16.6894 8.76951 17.0605C8.55865 17.4317 8.39069 17.8127 8.26566 18.2031C8.14068 18.5939 8.03712 19.0175 7.95511 19.4746C7.87302 19.9317 7.81834 20.3573 7.79096 20.752C7.76363 21.1467 7.75 21.551 7.75 21.9651C7.75 22.9024 8.03523 23.6429 8.60549 24.1859C9.17587 24.7287 9.93375 25 10.879 25H21.1215C22.0667 25 22.8245 24.7287 23.3949 24.1859C23.9655 23.6429 24.2505 22.9026 24.2505 21.9651C24.2505 21.551 24.2368 21.1467 24.2092 20.752Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_0_1" x="3" y="7" width="26" height="26" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape" />
+                      </filter>
+                      <clipPath id="clip0_0_1">
+                        <rect width="18" height="18" fill="white" transform="translate(7 7)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                My Account
+              </a>
+            </li>
+            <li class="account__item account__item--cart">
+              <a class="account__link" href="#">
+                <span class="account__icon-cart">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2902_28)">
+                      <path
+                        d="M5.3125 5.3125V10.625H13.1707L14.3501 5.3125H5.3125ZM3.1875 3.1875H17L14.875 12.75H3.1875V3.1875Z"
+                        fill="#2B2C30" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1875 1.0625H5.3125V4.25H3.1875V1.0625Z"
+                        fill="#2B2C30" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H5.3125V2.125H0V0Z" fill="#2B2C30" />
+                      <path
+                        d="M4.78125 17C5.66145 17 6.375 16.2865 6.375 15.4062C6.375 14.526 5.66145 13.8125 4.78125 13.8125C3.90105 13.8125 3.1875 14.526 3.1875 15.4062C3.1875 16.2865 3.90105 17 4.78125 17Z"
+                        fill="#2B2C30" />
+                      <path
+                        d="M12.2188 17C13.099 17 13.8125 16.2865 13.8125 15.4062C13.8125 14.526 13.099 13.8125 12.2188 13.8125C11.3385 13.8125 10.625 14.526 10.625 15.4062C10.625 16.2865 11.3385 17 12.2188 17Z"
+                        fill="#2B2C30" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2902_28">
+                        <rect width="17" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                Cart (1)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <button class="main-nav__button" type="button">
+          <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="24" height="2" rx="1" fill="#2B2C30" />
+            <rect y="8.5" width="24" height="2" rx="1" fill="#2B2C30" />
+            <rect y="16.5" width="24" height="2" rx="1" fill="#2B2C30" />
+          </svg>
+          <span class="visually-hidden">Open menu</span>
+        </button>
+        <ul class="main-nav__list container">
+          <li class="main-nav__item main-nav__item--home">
+            <a class="main-nav__link" href="#">Home</a>
+          </li>
+          <li class="main-nav__item main-nav__item--access">
+            <a class="main-nav__link" href="#">Unlimited Access</a>
+          </li>
+          <li class="main-nav__item main-nav__item--courses">
+            <a class="main-nav__link" href="#">Training Courses</a>
+          </li>
+          <li class="main-nav__item main-nav__item--free-files">
+            <a class="main-nav__link" href="#">Free Files</a>
+          </li>
+          <li class="main-nav__item main-nav__item--new-files">
+            <a class="main-nav__link" href="#">New Files</a>
+          </li>
+          <li class="main-nav__item main-nav__item--reseller-program">
+            <a class="main-nav__link" href="#">Reseller Program</a>
+          </li>
+          <li class="main-nav__item main-nav__item--request-exam">
+            <a class="main-nav__link" href="#">Request Exam</a>
+          </li>
+          <li class="main-nav__item main-nav__item--jobs">
+            <a class="main-nav__link" href="#">Jobs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="companies">
+      <ul class="companies__list container">
+        <li class="companies__item">Microsoft</li>
+        <li class="companies__item">Cisco</li>
+        <li class="companies__item">CompTIA</li>
+        <li class="companies__item">VMware</li>
+        <li class="companies__item">Citrix</li>
+        <li class="companies__item">Juniper</li>
+        <li class="companies__item">Amazon</li>
+        <li class="companies__item">ECCouncil</li>
+        <li class="companies__item">Fortinet</li>
+        <li class="companies__item">Checkpoint</li>
+        <li class="companies__item">Isaca</li>
+        <li class="companies__item">The Open Group</li>
+        <li class="companies__item">Other</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="grid container">
+    <div class="exam-certifications-wrapper">
+      <section class="exam">
+        <h2 class="exam__title">Passing Certification Exams Made Easy!</h2>
+        <p class="exam__paragraph">
+          Everything you need to prepare and quickly pass the tough certification exams in the first Attempt!
+        </p>
+        <h3 class="exam__subtitle">What we offer?</h3>
+        <ul class="exam__list">
+          <li class="exam__item">
+            <b>Instant downloads</b> allowing you to study as soon as you complete your purchase.
+          </li>
+          <li class="exam__item">
+            <b>High success rate</b> supported by our 99.3% pass rate history and money back
+            guarantee should you fail
+            your exam.
+          </li>
+          <li class="exam__item">
+            <b>Free first on the market updates</b> available within 2 weeks of any change to the actual exam.
+          </li>
+          <li class="exam__item">
+            <b>Latest sample question</b> give similar experience as practicing the actual test.
+          </li>
+          <li class="exam__item">
+            <b>Secure shopping experience</b> - Your information will never be shared with 3rd
+            parties without your permission.
+          </li>
+          <li class="exam__item">
+            <b>Free virtual exam</b> files for every exam that realistically simulates IT exam
+            environment - try before buy!
+          </li>
+        </ul>
+        <div class="exam__search">
+          <input class="exam__input" type="text" placeholder="Search for certification exams">
+          <button class="exam__button">Search</button>
+        </div>
+      </section>
+
+      <section class="certifications">
+        <h5 class="certifications__title">Hot Certifications</h5>
+        <ul class="certifications__list">
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/CompTIA-Security.jpg" srcset="img/CompTIA-Security@2x.jpg 2x" alt="CompTIA Security+">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              CompTIA Security+
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/azure-administrator-associate.jpg" srcset="img/azure-administrator-associate@2x.jpg 2x"
+                  alt="Microsoft Certified: Azure Administrator Associate">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              Microsoft Certified: Azure Administrator Associate
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/Ccna.jpg" srcset="img/Ccna@2x.jpg 2x" alt="CCNA">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              CCNA
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/CompTIA-A.jpg" srcset="img/CompTIA-A@2x.jpg 2x" alt="CompTIA A+">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              CompTIA A+
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/Get-Your-MCSA-Window-Server-2016-Certification.jpg"
+                  srcset="img/Get-Your-MCSA-Window-Server-2016-Certification@2x.jpg 2x" alt="MCSA: Windows Server 2016">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              MCSA: Windows<br> Server 2016
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/Microsoft-Certified-Azure-Fundamentals.jpg"
+                  srcset="img/Microsoft-Certified-Azure-Fundamentals@2x.jpg 2x"
+                  alt="Microsoft Certified Azure Fundamentals">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              Microsoft Certified Azure Fundamentals
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/CCNP-Enterprise.jpg" srcset="img/CCNP-Enterprise@2x.jpg 2x" alt="CCNP Enterprise">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              CCNP Enterprise
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/azure-solutions-architect-expert.jpg"
+                  srcset="img/azure-solutions-architect-expert@2x.jpg 2x"
+                  alt="Microsoft Certified: Azure Solutions Architect Expert">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              Microsoft Certified: Azure Solutions Architect Expert
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/Microsoft-365-Certified-Enterprise-Administrator-Expert.jpg"
+                  srcset="img/Microsoft-365-Certified-Enterprise-Administrator-Expert@2x.jpg 2x"
+                  alt="Microsoft 365 Certified: Enterprise Administrator Expert">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              Microsoft 365 Certified: Enterprise Administrator Expert
+            </p>
+          </li>
+          <li class="certifications__item">
+            <div class="certifications__img">
+              <picture>
+                <img src="img/microsoft365-modern-desktop-administrator-associate.jpg"
+                  srcset="img/microsoft365-modern-desktop-administrator-associate@2x.jpg 2x"
+                  alt="Microsoft 365 Certified: Modern Desktop Administrator Associate">
+              </picture>
+            </div>
+            <p class="certifications__text">
+              Microsoft 365 Certified: Modern Desktop Administrator Associate
+            </p>
+          </li>
+        </ul>
+
+        <div class="slider">
+          <div class="slider__wrapper container">
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section>
+      <h4 class="visually-hidden ">Aside</h4>
+      <article class="guarantee">
+        <h5 class="guarantee__title">Satisfaction Guaranteed</h5>
+        <p class="guarantee__subtitle"><b>98.4%</b> Pass Rate</p>
+        <p class="guarantee__text">
+          Our team works hard to provide students with high quality courses and compelling
+          learning experiences. We're confident of the quality level of the products we offer and provide no hassle
+          satisfaction guarantee.
+        </p>
+      </article>
+
+      <article class="benefits">
+        <h5 class="benefits__title">Why choose Exam-Labs?</h5>
+        <p class="benefits__text">
+          Over
+          <b class="benefits__text--green">100.00</b><br>
+          Satisfied Customers Since 2005
+        </p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <b>100%</b> Real Exam Questions
+          </li>
+          <li class="benefits__item">
+            Accurate & Updated <b>Answers</b>
+          </li>
+          <li class="benefits__item">
+            <b>Secured</b> Customer Date
+          </li>
+          <li class="benefits__item">
+            Regular <b>Free</b> Updates
+          </li>
+          <li class="benefits__item">
+            <b>24/7</b> Customer Support
+          </li>
+          <li class="benefits__item">
+            <b>98.4%</b> Pass Rate
+          </li>
+          <li class="benefits__item">
+            <b>Instant</b> Download
+          </li>
+        </ul>
+      </article>
+
+      <article class="help">
+        <h5 class="help__title">Need Help? Contact Us</h5>
+        <a class="help__link" href="#">Customer Support</a>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

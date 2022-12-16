@@ -1,0 +1,29 @@
+.companies {
+  background: linear-gradient(270deg, $bg-color-inner1 0%, $bg-color-inner2 100%);
+  color: $action-text-color;
+  padding: 15px 0 11px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.0044em;
+    margin-right: 46px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .companies {
+    display: none;
+  }
+}

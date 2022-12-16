@@ -1,0 +1,63 @@
+.guarantee {
+  background: $bg-color-innner3;
+  border: 1px solid $action-color;
+  border-radius: 10px;
+  padding: 26px 23px 34px;
+  margin-bottom: 30px;
+
+  &__title {
+    color: $action-color;
+    margin: 0;
+    padding: 0 0 0 63px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.0044em;
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-image: url(../icons/guarantee\ 1.png);
+      display: inline-block;
+      top: -2px;
+      left: 0;
+      margin-right: 19px;
+    }
+  }
+
+  &__subtitle {
+    margin: 7.5px 0 30px;
+    padding: 0 0 0 63px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.0044em;
+    color: $basic-color;
+  }
+
+  &__subtitle span {
+    font-weight: 500;
+
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0044em;
+    color: $basic-color;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .guarantee {
+    padding: 26px 17px 30px 23px;
+  }
+}
